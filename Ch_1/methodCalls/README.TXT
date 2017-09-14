@@ -1,0 +1,1 @@
+Let you define an amount of books you want to print then prints that amount in the console.

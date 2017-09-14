@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Seven
+comment0.text=\nJames\ Slattery\nNumber\ 7-11\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ victory()
+comment3.params=
+comment3.target=void\ ball()
+comment4.params=
+comment4.target=void\ ballModified()
+comment5.params=
+comment5.target=void\ spaceShips()
+comment6.params=
+comment6.target=void\ primaryEleven()
+comment7.params=num
+comment7.target=void\ stars(int)
+comment8.params=
+comment8.target=void\ space()
+numComments=9
