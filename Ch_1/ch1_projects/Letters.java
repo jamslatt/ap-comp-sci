@@ -27,10 +27,8 @@ public class Letters {
         System.out.println();
         System.out.println("Write me back,");
         System.out.println("       " + from);
-        
 
     }
-
     public static void paragraphSelector(String rep) {
         if (rep.equals("Grandma") || rep.equals("Mom") ) {
             System.out.println("How are doing? Today I climed McMountian and jumped off of three buildings! I miss you guys.");
@@ -45,7 +43,7 @@ public class Letters {
             System.out.println("don't find out the other exists. :) rock on my brutttah");
         }
         else {
-         System.out.println("Sorry, but I do not know how to write a letter for " + rep + ". Please try \"Grandma\", \"Mom\", or \"Friend\".");   
+            System.out.println("Sorry, but I do not know how to write a letter for " + rep + ". Please try \"Grandma\", \"Mom\", or \"Friend\".");   
         }
     }
 
@@ -54,7 +52,7 @@ public class Letters {
         System.out.println("study more. The senior party life is real. I am ready to graduate and get off this island. What");
         System.out.println("have you been up to?");
     }
-    
+
     public static void endPar(String k) {
         System.out.println("Well its been good catching up but I need to catch this bus to the next pot shop. Gotta get my herbs to");
         System.out.println("study. Telling you " + k + " you have got to try some of this cannibis. It is some quality stuff!");
