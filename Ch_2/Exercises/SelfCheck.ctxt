@@ -2,4 +2,10 @@
 comment0.target=SelfCheck
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=
+comment2.target=void\ two()
+comment3.params=
+comment3.target=void\ three()
+comment4.params=
+comment4.target=void\ four()
+numComments=5
