@@ -12,6 +12,8 @@ public class NestedForLoops {
                 System.out.println("Hello");
             }
         }
+        
+        System.out.println("Wow!");
     }
 }
 
