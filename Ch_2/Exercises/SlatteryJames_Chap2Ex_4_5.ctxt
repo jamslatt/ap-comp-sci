@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SlatteryJames_Chap2Ex_4_5
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ four()
+comment3.params=
+comment3.target=void\ five()
+comment4.params=amt
+comment4.target=void\ stars(int)
+numComments=5
