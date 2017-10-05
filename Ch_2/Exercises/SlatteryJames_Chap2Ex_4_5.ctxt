@@ -6,6 +6,4 @@ comment2.params=
 comment2.target=void\ four()
 comment3.params=
 comment3.target=void\ five()
-comment4.params=amt
-comment4.target=void\ stars(int)
-numComments=5
+numComments=4
