@@ -29,5 +29,17 @@ public class Ex_6_7 {
             System.out.print(i + "\n");
         }
     }
+    
+    public static void eight() {
+        for(int i=1; i<=5; i++) {
+            for(int j=5; j>=i; j--) {
+                System.out.print(" ");
+            }
+            for(int q=1; q<=i; q++) {
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
 }
 

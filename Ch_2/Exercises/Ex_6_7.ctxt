@@ -6,4 +6,6 @@ comment2.params=
 comment2.target=void\ six()
 comment3.params=
 comment3.target=void\ seven()
-numComments=4
+comment4.params=
+comment4.target=void\ eight()
+numComments=5
