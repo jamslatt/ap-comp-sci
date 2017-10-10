@@ -3,61 +3,59 @@
 // By James Slattery
 // Ch 2 Project 2
 // View online at https://github.com/jamslatt/ap-comp-sci
-// Warning: This code needs to be cleaned up... :D
 //////////////////////////////////////////////////////////
 
 public class ProjectTwo {
-    public static final int AMT = 2;
-    
-    
     public static void main(String[] args) {
-        for (int i = 0; i<AMT; i++) {
-            hourGlass();
-            System.out.println();
-            System.out.println();
-        }
+        topHalf();
+        bottomHalf();
     }
-    
-    public static void hourGlass() {
-        int a = 4;
-        int initspace = 6;
 
-        System.out.println("        :\"\"\"\"\"\"\"\"\"':");
-        for( int i = 0; i<5; i++) {
-            System.out.print(" ");
-            for (int spaces = 0; spaces<=initspace; spaces++) {
-                System.out.print(" ");
-            }
-            initspace += 1;
-            
-            System.out.print("\\");
-            for (int b = 1; b<=a; b++) {
-                System.out.print(": "); 
-            }
-            a -= 1;
-            System.out.print(":/");
-            
-            System.out.println();
-            
-        }
-        
-        int kk = 0;
-        for( int j = 0; j<5; j++) {
-            for (int spacess = 0; spacess<=initspace; spacess++) {
-                System.out.print(" ");
-            }
-            initspace -= 1;
-            
-            System.out.print("/");
-            for (int k=1; k<=kk; k++) {
-                System.out.print(": "); 
-            }
-            kk += 1;
-            System.out.print(":\\");
-            
-            System.out.println();
-            
-        }
-        System.out.println("        :\"\"\"\"\"\"\"\"\"':");
+    public static void hr() {
+        System.out.println("+------+");
     }
+
+    public static void topHalf() {
+        hr();
+        design(" ",6,0,0,0,0);
+        for (int i=0;i<2;i++) {
+            design("^",2,2,2,0,0);
+            design("^",1,1,2,1,1);
+            design("^",0,1,4,1,0);
+        }
+        hr();
+    }
+
+    public static void bottomHalf() {
+        for(int i=0; i<2; i++) {
+            design("v",0,1,4,1,0);
+            design("v",1,1,2,1,1);
+            design("v",2,2,2,0,0);
+        }
+        hr();
+    }
+
+    public static void design(String design,int firstSpace, int firstArrow, int secondSpace, int secondArrow, int thirdSpace) {
+        System.out.print("|");
+        for (int i=0; i<firstSpace; i++) {
+            System.out.print(" ");
+        }
+
+        for (int i=0; i<firstArrow; i++) {
+            System.out.print(design);
+        }
+
+        for (int i=0; i<secondSpace; i++) {
+            System.out.print(" ");
+        }
+
+        for (int i=0; i<secondArrow; i++) {
+            System.out.print(design);
+        }
+        for (int i=0; i<thirdSpace; i++) {
+            System.out.print(" ");
+        }
+        System.out.println("|");
+    }
+
 }
