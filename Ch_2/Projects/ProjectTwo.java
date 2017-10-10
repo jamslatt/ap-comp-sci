@@ -3,10 +3,22 @@
 // By James Slattery
 // Ch 2 Project 2
 // View online at https://github.com/jamslatt/ap-comp-sci
+// Warning: This code needs to be cleaned up... :D
 //////////////////////////////////////////////////////////
 
 public class ProjectTwo {
+    public static final int AMT = 2;
+    
+    
     public static void main(String[] args) {
+        for (int i = 0; i<AMT; i++) {
+            hourGlass();
+            System.out.println();
+            System.out.println();
+        }
+    }
+    
+    public static void hourGlass() {
         int a = 4;
         int initspace = 6;
 
