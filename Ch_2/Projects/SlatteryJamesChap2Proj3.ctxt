@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=ProjectThree
+comment0.target=SlatteryJamesChap2Proj3
 comment0.text=\n\ Plan\ is\ to\ write\ four\ methods\ (main,\ up\ arrow,\ down\ arrow,\ and\ the\ line\ that\ divides\ the\ two\ sectors)\n\ each\ part\ is\ composed\ of\ nested\ four\ loops\ that\ print\ each\ line\ one\ by\ one\ and\ subtract\ or\ add\ components\n\ each\ time.\ Once\ each\ component\ is\ built\ use\ the\ main\ method\ to\ create\ the\ desired\ design\ and\ have\ a\ global\n\ variable\ and\ basic\ for\ loop\ to\ define\ how\ many\ times\ that\ design\ is\ printed.\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
