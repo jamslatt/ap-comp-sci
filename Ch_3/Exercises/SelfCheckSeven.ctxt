@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=SelfCheckSeven
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=msg\ reps
+comment2.target=void\ printHouse(java.lang.String,\ int)
+numComments=3
