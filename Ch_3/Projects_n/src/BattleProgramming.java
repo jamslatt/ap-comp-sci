@@ -5,14 +5,11 @@ public class BattleProgramming {
     public static void main(String[] args) {
         battleStart();
         options();
-
-
-
     }
 
     // Allows user to slect their next move after game has ended.
     private static void options() {
-        System.out.println("The game has ended. What would you like to do now?\nRestart\nStats");
+        System.out.println("The game has ended. What would you like to do now?\nRestart\nStats\nEnd");
         Scanner scanner = new Scanner(System.in);
         String option = scanner.nextLine().toUpperCase();
         if (option.equals("RESTART")) {
@@ -21,19 +18,45 @@ public class BattleProgramming {
         else if (option.equals("STATS")) {
             stats();
         }
+        else if (option.equals("END")) {
+            System.out.print("\nGame over man.. game over.");
+        }
 
     }
 
     // View pokemon stats
     public static void stats () {
-        System.out.println("--------------------------------------\n      <<<< POKEMON STATS >>>>\n--------------------------------------\nType the name of pokemon whos stats you want to see...");
+        System.out.println("--------------------------------------\n      <<<< POKEMON STATS >>>>\n--------------------------------------\nType the name of pokemon whos stats you want to see...\n We have stats for: Pikachu and Glabadaba.");
         Scanner scanner = new Scanner(System.in);
-        String statsFor = scanner.nextLine().toUpperCase();
+        String statsFor = scanner.nextLine();
 
+        if (statsFor.toUpperCase().equals("PIKACHU") || statsFor.toUpperCase().equals("GLABADABA")) {
+           NewPokemon pikachu = new NewPokemon(10,21,30,51,5,162);
+           NewPokemon glabadaba = new NewPokemon(15,21,15,25,7,96);
+           if (statsFor.toUpperCase().equals("PIKACHU")) {
+               System.out.println("*-----------------------------*");
+               System.out.println("| Name: Pikachu |  Level: 10  |");
+               System.out.println("| Defense: 30   |  Base: 30   |");
+               System.out.println("| STAB: 5       |  HP: 162    |");
+               System.out.println("*-----------------------------*");
+               options();
+           }
+           else if (statsFor.toUpperCase().equals("GLABADABA")) {
+               System.out.println("*-------------------------------*");
+               System.out.println("| Name: Glabadaba |  Level: 15  |");
+               System.out.println("| Defense: 15     |  Base: 25   |");
+               System.out.println("| STAB: 7         |  HP: 96     |");
+               System.out.println("*-------------------------------*");
+               options();
+           }
+        }
+        else {
+            System.out.println("Sorry, that pokemons stats are not found in this database.");
+            options();
+        }
 
 
     }
-
 
     // Damage
     private static double damage(int level, int attack, int defense, int base, int STAB) {
@@ -68,24 +91,25 @@ public class BattleProgramming {
             else if (level <= 0) {
                 System.out.println("You must pick a positive level between 1-10.");
             }
-            level = scanner.nextInt();
-            System.out.println("Attack?");
-            int attack = scanner.nextInt();
-            System.out.println("Defense?");
-            int defense = scanner.nextInt();
-            System.out.println("Base?");
-            int base = scanner.nextInt();
-            System.out.println("STAB?");
-            int STAB = scanner.nextInt();
-            System.out.println("HP?");
-            int HP = scanner.nextInt();
-            System.out.println(UserPokemon + ": Level " + level + " Attack " + attack + " Defense " + defense + " Base " + base + " STAB " + STAB + " HP " + HP + ".");
-            NewPokemon pokemon = new NewPokemon(level,attack,defense,base,STAB,HP);
+            else {
+                System.out.println("Attack?");
+                int attack = scanner.nextInt();
+                System.out.println("Defense?");
+                int defense = scanner.nextInt();
+                System.out.println("Base?");
+                int base = scanner.nextInt();
+                System.out.println("STAB?");
+                int STAB = scanner.nextInt();
+                System.out.println("HP?");
+                int HP = scanner.nextInt();
+                System.out.println(UserPokemon + ": Level " + level + " Attack " + attack + " Defense " + defense + " Base " + base + " STAB " + STAB + " HP " + HP + ".");
+                NewPokemon pokemon = new NewPokemon(level, attack, defense, base, STAB, HP);
 
-            // Damage
-            double damage = damage(pokemon.level, pokemon.attack,pokemon.defense,pokemon.base,pokemon.STAB);
-            pokemon.HP -= damage;
-            System.out.println(UserPokemon + " sustained " + damage + " damage points! " + UserPokemon + " health points left is " + pokemon.HP + ".");
+                // Damage
+                double damage = damage(pokemon.level, pokemon.attack, pokemon.defense, pokemon.base, pokemon.STAB);
+                pokemon.HP -= damage;
+                System.out.println(UserPokemon + " sustained " + damage + " damage points! " + UserPokemon + " health points left is " + pokemon.HP + ".");
+            }
         }
 
 
