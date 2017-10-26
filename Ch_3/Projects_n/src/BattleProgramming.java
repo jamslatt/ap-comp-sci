@@ -4,7 +4,6 @@ public class BattleProgramming {
 
     public static void main(String[] args) {
         battleStart();
-        options();
     }
 
     // Allows user to slect their next move after game has ended.
@@ -81,6 +80,7 @@ public class BattleProgramming {
             pokemon.HP -= damage;
             System.out.println(UserPokemon + " sustained " + damage + " damage points! " + UserPokemon + " health points left is " + pokemon.HP + ".");
         }
+        // If you don't pick a pre-defined pokemon
         else {
             System.out.println("You chose " + UserPokemon + ".\n\nIt is a battle between " + UserPokemon + " and " + enemy + "!\n\n Please define " + UserPokemon + " stats...");
             System.out.println("Level?");
@@ -92,6 +92,7 @@ public class BattleProgramming {
                 System.out.println("You must pick a positive level between 1-10.");
             }
             else {
+                // Collects user vars for NewPokemon object
                 System.out.println("Attack?");
                 int attack = scanner.nextInt();
                 System.out.println("Defense?");
@@ -103,6 +104,7 @@ public class BattleProgramming {
                 System.out.println("HP?");
                 int HP = scanner.nextInt();
                 System.out.println(UserPokemon + ": Level " + level + " Attack " + attack + " Defense " + defense + " Base " + base + " STAB " + STAB + " HP " + HP + ".");
+                // Creates new NewPokemon instance
                 NewPokemon pokemon = new NewPokemon(level, attack, defense, base, STAB, HP);
 
                 // Damage
@@ -112,8 +114,8 @@ public class BattleProgramming {
             }
         }
 
-
-
+        // Once battle is over return to menu
+        options();
 
     }
 
