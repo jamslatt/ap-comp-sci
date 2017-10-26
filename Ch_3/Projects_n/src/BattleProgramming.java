@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class BattleProgramming {
+
     public static void main(String[] args) {
         battleStart();
         options();
@@ -45,27 +46,48 @@ public class BattleProgramming {
         System.out.println("--------------------------------------\n      <<<< POKEMON BATTLE >>>>\n--------------------------------------\nAnother trainer is issuing a challenge!");
         String enemy = generateOpponent();
         System.out.println( enemy + " appeared.");
-        System.out.println("Which Pokemon do you choose?");
+        System.out.println("Which Pokemon do you choose? (Pikachu, Glabadaba)");
         Scanner scanner = new Scanner(System.in);
         String UserPokemon = scanner.nextLine();
-        System.out.println("You chose " + UserPokemon + ".\n\nIt is a battle between " + UserPokemon + " and " + enemy + "!\n\n Please define " + UserPokemon + " stats...");
-        System.out.println("Level?");
-        int level = scanner.nextInt();
-        System.out.println("Attack?");
-        int attack = scanner.nextInt();
-        System.out.println("Defense?");
-        int defense = scanner.nextInt();
-        System.out.println("Base?");
-        int base = scanner.nextInt();
-        System.out.println("STAB?");
-        int STAB = scanner.nextInt();
-        System.out.println("HP?");
-        int HP = scanner.nextInt();
-        System.out.println(UserPokemon + ": Level " + level + " Attack " + attack + " Defense " + defense + " Base " + base + " STAB " + STAB + " HP " + HP + ".");
-        NewPokemon pokemon = new NewPokemon(level,attack,defense,base,STAB,HP);
-        double damage = damage(pokemon.level, pokemon.attack,pokemon.defense,pokemon.base,pokemon.STAB);
-        pokemon.HP -= damage;
-        System.out.println(UserPokemon + " sustained " + damage + " damage points! " + UserPokemon + " health points left is " + pokemon.HP + ".");
+        if (UserPokemon.toUpperCase().equals("PIKACHU") || UserPokemon.toUpperCase().equals("GLABADABA")) {
+            System.out.println("You chose " + UserPokemon + ".\n\nIt is a battle between " + UserPokemon + " and " + enemy + "!");
+            NewPokemon pokemon = new NewPokemon(10,100,100,100,100,200);
+
+            // Damage
+            double damage = damage(pokemon.level, pokemon.attack,pokemon.defense,pokemon.base,pokemon.STAB);
+            pokemon.HP -= damage;
+            System.out.println(UserPokemon + " sustained " + damage + " damage points! " + UserPokemon + " health points left is " + pokemon.HP + ".");
+        }
+        else {
+            System.out.println("You chose " + UserPokemon + ".\n\nIt is a battle between " + UserPokemon + " and " + enemy + "!\n\n Please define " + UserPokemon + " stats...");
+            System.out.println("Level?");
+            int level = scanner.nextInt();
+            if (level > 10) {
+                System.out.println("Please pick a number Between 0-10");
+            }
+            else if (level <= 0) {
+                System.out.println("You must pick a positive level between 1-10.");
+            }
+            level = scanner.nextInt();
+            System.out.println("Attack?");
+            int attack = scanner.nextInt();
+            System.out.println("Defense?");
+            int defense = scanner.nextInt();
+            System.out.println("Base?");
+            int base = scanner.nextInt();
+            System.out.println("STAB?");
+            int STAB = scanner.nextInt();
+            System.out.println("HP?");
+            int HP = scanner.nextInt();
+            System.out.println(UserPokemon + ": Level " + level + " Attack " + attack + " Defense " + defense + " Base " + base + " STAB " + STAB + " HP " + HP + ".");
+            NewPokemon pokemon = new NewPokemon(level,attack,defense,base,STAB,HP);
+
+            // Damage
+            double damage = damage(pokemon.level, pokemon.attack,pokemon.defense,pokemon.base,pokemon.STAB);
+            pokemon.HP -= damage;
+            System.out.println(UserPokemon + " sustained " + damage + " damage points! " + UserPokemon + " health points left is " + pokemon.HP + ".");
+        }
+
 
 
 
