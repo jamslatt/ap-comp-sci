@@ -27,7 +27,7 @@ public class NukeBitchMan {
     // Start game
     public static void game(String opponent) {
         System.out.println("--------------------------------------\n               Nuke Bitch Man\n--------------------------------------");
-        System.out.println("Pick your player? (Nuke, Bitch, Man)");
+        System.out.println("Pick your player? (Nuke, B*#!h, Man)");
         Scanner scanner = new Scanner(System.in);
         String player = scanner.nextLine();
         System.out.println("You picked " + player + "!");
@@ -37,7 +37,7 @@ public class NukeBitchMan {
 
             System.out.println("Nuke!");
             Thread.sleep(1000);
-            System.out.println("Bitch!");
+            System.out.println("B*#!h!");
             Thread.sleep(1000);
             System.out.println("Man!");
 
@@ -65,7 +65,7 @@ public class NukeBitchMan {
         if (selector <= 33.33)
             return "NUKE";
         if (selector > 33.33 && selector <= 66.66)
-            return "BITCH";
+            return "B*#!H";
         if (selector > 66.66)
             return "MAN";
         else
@@ -77,7 +77,7 @@ public class NukeBitchMan {
         int win = 0;
         int loose = 0;
 
-        if ((player.equals("NUKE") && opponent.equals("BITCH")) || (player.equals("BITCH") && opponent.equals("NUKE"))) {
+        if ((player.equals("NUKE") && opponent.equals("B*#!H")) || (player.equals("B*#!H") && opponent.equals("NUKE"))) {
             System.out.println("Nuke Wins.");
             if (!player.equals("NUKE"))
                 System.out.println("You lost!! Ha ha u suck!");
@@ -98,17 +98,14 @@ public class NukeBitchMan {
         if (player.equals(opponent))
             System.out.print("Tie.");
 
-        if ((player.equals("MAN") && opponent.equals("BITCH")) || (player.equals("BITCH") && opponent.equals("MAN"))) {
+        if ((player.equals("MAN") && opponent.equals("B*#!H")) || (player.equals("B*#!H") && opponent.equals("MAN"))) {
             System.out.println("Bitch wins.");
-            if (!player.equals("BITCH"))
+            if (!player.equals("B*#!H"))
                 loose += 1;
                 System.out.println("You lost!! Ha ha u suck!");
-            if (player.equals("BITCH"))
+            if (player.equals("B*#!H"))
                 win += 1;
         }
-
-
-
 
 
 
