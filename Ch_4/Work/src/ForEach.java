@@ -5,6 +5,7 @@ public class ForEach {
         int[] array = {1,3,9,2,10,8};
         setAllToFortyTwo(array);
 
+        System.out.print(vowels("aeikkmou"));
     }
 
     public static void setAllToFortyTwo(int[] array) {
@@ -58,6 +59,20 @@ public class ForEach {
 
 
     //4
+
+    public static int vowels(String str) {
+        int count = 0;
+
+        str = str.toLowerCase();
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
+                count++;
+            }
+        }
+
+        return count;
+    }
 
 
 }
