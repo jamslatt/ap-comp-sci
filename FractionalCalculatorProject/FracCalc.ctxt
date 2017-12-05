@@ -2,6 +2,6 @@
 comment0.target=FracCalc
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=input
+comment2.params=str
 comment2.target=java.lang.String\ produceAnswer(java.lang.String)
 numComments=3

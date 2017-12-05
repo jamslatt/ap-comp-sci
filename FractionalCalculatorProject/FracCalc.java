@@ -1,3 +1,5 @@
+package FractionalCalculatorProject;
+
 import java.util.Scanner;
 
 public class FracCalc {
