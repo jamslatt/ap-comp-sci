@@ -49,6 +49,21 @@ public class MagPie2
         else if (statement.indexOf("dog") >= 0 || statement.indexOf("cat") >= 0 || statement.indexOf("frog") >= 0) {
             response = "Tell me more about your pet.";
         }
+        else if (statement.indexOf("Sovick") >= 0) {
+            response = "Teachers a pleb.";
+        }
+        else if ( statement.trim().length() == 0) {
+            response = "Oi dumbass u don't got no chars!";
+        }
+        else if (statement.indexOf("islam") >= 0) {
+            response = "ALLLLLLAAHHHHHH ACKBARRRRRRRRRR ** gets hellfire up the assssss***";
+        }
+        else if (statement.indexOf("isreal") >= 0) {
+            response = "The capital of Isreal is juesalam.";
+        }
+        else if (statement.indexOf("shit") >= 0 || statement.indexOf("crap") >= 0 || statement.indexOf("worst prezz") >= 0) {
+            response = "You must be talking about obama!";
+        }
         else
         {
             response = getRandomResponse();
