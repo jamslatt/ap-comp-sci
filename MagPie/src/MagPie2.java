@@ -46,6 +46,9 @@ public class MagPie2
         {
             response = "Tell me more about your family.";
         }
+        else if (statement.indexOf("dog") >= 0 || statement.indexOf("cat") >= 0 || statement.indexOf("frog") >= 0) {
+            response = "Tell me more about your pet.";
+        }
         else
         {
             response = getRandomResponse();

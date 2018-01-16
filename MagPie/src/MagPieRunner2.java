@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author Laurie White
  * @version April 2012
  */
-public class MagpieRunner2
+public class MagPieRunner2
 {
 
     /**

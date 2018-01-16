@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MongoConnect.iml" filepath="$PROJECT_DIR$/.idea/modules/MongoConnect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MongoConnect_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MongoConnect_main.iml" group="MongoConnect" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MongoConnect_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MongoConnect_test.iml" group="MongoConnect" />
+    </modules>
+  </component>
+</project>
