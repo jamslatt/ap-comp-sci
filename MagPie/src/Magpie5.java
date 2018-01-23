@@ -267,7 +267,11 @@ public class Magpie5
     private String [] randomResponses = {"Interesting, tell me more",
             "Hmmm.",
             "Do you really think so?",
-            "You don't say."
+            "You don't say.",
+            "Hey there, I am random!",
+            "Whamp a dampa! you da real G",
+            "Welcome to Dunder Mifflin! How may I assist you?",
+            "Did you know that dogs can live up to 2 hours with their heads cut off."
     };
 
 }

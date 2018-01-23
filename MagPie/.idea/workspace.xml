@@ -16,8 +16,8 @@
       <file leaf-file-name="Magpie5.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Magpie5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+            <state relative-caret-position="559">
+              <caret line="273" column="84" lean-forward="false" selection-start-line="273" selection-start-column="84" selection-end-line="273" selection-end-column="84" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#525#526#0" expanded="true" />
@@ -65,8 +65,8 @@
         <option value="$PROJECT_DIR$/src/StringExplorer.java" />
         <option value="$PROJECT_DIR$/src/MagpieRunner4.java" />
         <option value="$PROJECT_DIR$/src/Magpie4.java" />
-        <option value="$PROJECT_DIR$/src/Magpie5.java" />
         <option value="$PROJECT_DIR$/src/MagpieRunner5.java" />
+        <option value="$PROJECT_DIR$/src/Magpie5.java" />
       </list>
     </option>
   </component>
@@ -620,12 +620,12 @@
       <workItem from="1516252546521" duration="440000" />
       <workItem from="1516292399956" duration="2230000" />
       <workItem from="1516296301219" duration="4000" />
-      <workItem from="1516673019952" duration="138000" />
+      <workItem from="1516673019952" duration="265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5244000" />
+    <option name="totallyTimeSpent" value="5371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="294" y="34" width="1717" height="1176" extended-state="0" />
@@ -843,8 +843,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Magpie5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        <state relative-caret-position="559">
+          <caret line="273" column="84" lean-forward="false" selection-start-line="273" selection-start-column="84" selection-end-line="273" selection-end-column="84" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#525#526#0" expanded="true" />
