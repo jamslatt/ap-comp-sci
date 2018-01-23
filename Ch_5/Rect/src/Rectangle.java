@@ -2,6 +2,8 @@
 // GitHub: @jamslatt     //
 ///////////////////////////
 import java.awt.Point;
+import java.util.Arrays;
+
 
 public class Rectangle {
     private int x;
@@ -79,6 +81,38 @@ public class Rectangle {
         }
 
         return false;
+    }
+
+    // Box the box
+    public Rectangle union(Rectangle rect) {
+        // 1st Rect
+        int range = y - height;
+        int domain = x + width;
+        // 2nd Rect
+        int range2 = rect.y - rect.height;
+        int domain2 = rect.x + rect.width;
+        // x min max
+        int[] xVals = new int[4];
+        xVals[0] = x;
+        xVals[1] = domain;
+        xVals[2] = rect.x;
+        xVals[3] = domain2;
+        Arrays.sort(xVals);
+        int xMin = xVals[0];
+        int xMax = xVals[3];
+        // y min max
+        int[] yVals = new int[4];
+        yVals[0] = y;
+        yVals[1] = range;
+        yVals[2] = rect.y;
+        yVals[3] = range2;
+        Arrays.sort(yVals);
+        int yMin = yVals[0];
+        int yMax = yVals[3];
+        // Rect calculations
+        Point bigRect = new Point(xMin, yMax);
+
+        return new Rectangle(bigRect, (xMax-xMin), (yMax-yMin));
     }
 
 }
