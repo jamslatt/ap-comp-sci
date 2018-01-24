@@ -115,4 +115,8 @@ public class Rectangle {
         return new Rectangle(bigRect, (xMax-xMin), (yMax-yMin));
     }
 
+    //public Rectangle intersect(Rectangle rect) {
+
+    //}
+
 }
