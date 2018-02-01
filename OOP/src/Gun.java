@@ -17,5 +17,10 @@ public class Gun {
         this.canned = true;
     }
 
+    public void print() {
+        System.out.print("This is a " + caliber + " and has a " + clipSize + " round mag capacity.");
+    }
+
 }
+
 

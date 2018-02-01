@@ -10,6 +10,11 @@ public class Handgun extends  Gun {
         this.action = act;
     }
 
+    public void  print() {
+        super.print();
+        System.out.println(" This is a " + action + " action handgun.");
+    }
+
     public void getAction() {
         System.out.println(action);
     }
