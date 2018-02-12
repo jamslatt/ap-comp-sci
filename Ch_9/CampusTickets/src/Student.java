@@ -18,4 +18,9 @@ public class Student extends Ticket {
             return 20;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Number: " + super.getTicketId() + " Price: " + this.getPrice() + " STUDENT ID REQUIREDDDDDDDD!!!!!!!";
+    }
 }

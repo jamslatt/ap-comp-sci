@@ -11,6 +11,10 @@ public abstract class Ticket {
 
     public abstract int getPrice();
 
+    public int getTicketId() {
+        return ticketId;
+    }
+
     public String toString() {
         return "Number: " + this.ticketId + " Price: " + this.getPrice();
     }
