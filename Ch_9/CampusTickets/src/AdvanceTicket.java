@@ -3,7 +3,7 @@
 ///////////////////////////
 
 public class AdvanceTicket extends Ticket {
-    int DaysBeforeEvent;
+    private int DaysBeforeEvent;
 
     public AdvanceTicket( int daysBeforeEvent, int number) {
         super(number);
@@ -18,4 +18,15 @@ public class AdvanceTicket extends Ticket {
             return 40;
         }
     }
+
+    public boolean raffle() {
+        int winner = (int)(Math.random() * 100);
+        if (this.getTicketId() == winner) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
+

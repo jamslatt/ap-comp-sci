@@ -5,7 +5,7 @@
 public abstract class Ticket {
     private int ticketId;
 
-    public Ticket (int n){
+    public Ticket (int n) {
         this.ticketId = n;
     }
 
