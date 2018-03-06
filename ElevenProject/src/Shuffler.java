@@ -64,13 +64,16 @@ public class Shuffler {
      * @param values is an array of integers simulating cards to be shuffled.
      */
     public static void perfectShuffle(int[] values) {
+        // Set up 2 arrays for each half of deck
         int[] half1 = new int[ VALUE_COUNT / 2 ];
         int[] half2 = new int[ VALUE_COUNT - VALUE_COUNT / 2 ];
 
+        // Copy first half deck
         for( int i = 0; i < VALUE_COUNT / 2; i++ ) {
             half1[i] = values[i];
         }
 
+        // Copy second half of deck
         for( int i = 0; i < VALUE_COUNT - VALUE_COUNT / 2; i++ ) {
             half2[i] = values[ i + VALUE_COUNT / 2 ];
         }
