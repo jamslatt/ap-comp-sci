@@ -14,7 +14,7 @@ public class TsetBlah {
                 schoolProgram.add("Physics");
 // YOUR CODE CODE GOES HERE
             schoolProgram.set(2,"Geometry");
-            
+
             }
 
     }
