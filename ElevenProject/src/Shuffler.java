@@ -2,6 +2,8 @@
 // GitHub: @jamslatt     //
 ///////////////////////////
 
+import java.util.List;
+
 /**
  * This class provides a convenient way to test shuffling methods.
  */
