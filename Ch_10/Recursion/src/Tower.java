@@ -4,23 +4,30 @@
 import java.util.Scanner;
 
 public class Tower {
-
-
-        public void solve(int n, String start, String auxiliary, String end) {
-            if (n == 1) {
-                System.out.println(start + " -> " + end);
-            } else {
-                solve(n - 1, start, end, auxiliary);
-                System.out.println(start + " -> " + end);
-                solve(n - 1, auxiliary, start, end);
-            }
-        }
-
         public static void main(String[] args) {
-            Tower towersOfHanoi = new Tower();
+            // Intro
+            System.out.println("This program solves the Towers of Hanoi puzzle.\nYou specify how many disks to put initally on\nTower A and I will tell you a series of moves to\nget tem all to tower B.");
+            // How many disc to solve for?
             System.out.print("Enter number of discs: ");
             Scanner scanner = new Scanner(System.in);
             int discs = scanner.nextInt();
-            towersOfHanoi.solve(discs, "A", "B", "C");
+            solve(discs, "A", "B", "C");
         }
+
+        public static void solve(int n, String a, String b, String c) {
+            // Base Case (if only 1 block)
+            if (n == 1) {
+                System.out.println("Move disk from " + a + " to " + c);
+            }
+            // If not one block then
+            else {
+                // Inital Push
+                solve(n - 1, a, c, b);
+                System.out.println("Move disk from " + a + " to " + c);
+                // Secondary push to get them from the mid pos and finish the job off.
+                solve(n - 1, b, a, c);
+            }
+        }
+
+
 }
