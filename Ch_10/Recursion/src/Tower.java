@@ -1,16 +1,14 @@
 // By James Slattery     //
 // GitHub: @jamslatt     //
 ///////////////////////////
-import java.util.Scanner;
 
 public class Tower {
+        // Set disc amt
+        public static final int discs = 3;
+
         public static void main(String[] args) {
             // Intro
             System.out.println("This program solves the Towers of Hanoi puzzle.\nYou specify how many disks to put initally on\nTower A and I will tell you a series of moves to\nget tem all to tower B.");
-            // How many disc to solve for?
-            System.out.print("Enter number of discs: ");
-            Scanner scanner = new Scanner(System.in);
-            int discs = scanner.nextInt();
             solve(discs, "A", "B", "C");
         }
 
