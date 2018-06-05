@@ -1,4 +1,4 @@
-package run.james.chat.chatapp;
+package run.james.chatapp.chatapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

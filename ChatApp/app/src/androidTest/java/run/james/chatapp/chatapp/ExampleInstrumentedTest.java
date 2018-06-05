@@ -1,4 +1,4 @@
-package run.james.chat.chatapp;
+package run.james.chatapp.chatapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -17,10 +17,10 @@ import static org.junit.Assert.*;
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
     @Test
-    public void useAppContext() throws Exception {
+    public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("run.james.chat.chatapp", appContext.getPackageName());
+        assertEquals("run.james.chatapp.chatapp", appContext.getPackageName());
     }
 }
